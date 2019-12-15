@@ -1,0 +1,7 @@
+APPLICATION_NAME=ibm-blog
+SOURCE_REPOSITORY_URL=https://github.com/alaa-farrag/openshift-wordpress.git
+CONTEXT_DIR=wordpress
+APPLICATION_DOMAIN=ibm-blog.apps.fyre.ibm.com
+DATABASE_NAME=ibmblogdb
+DATABASE_USER=ibmadmin
+DATABASE_PASSWORD=Oliya.20

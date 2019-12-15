@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: ibm-blog-pv
+spec:
+  capacity:
+    storage: 1Gi 
+  accessModes:
+    - ReadWriteMany 
+  persistentVolumeReclaimPolicy: Delete
+  nfs: 
+    path: /export/v08
+    server: ocp311-infra-1
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: ibm-blog-mysql-pv
+spec:
+  capacity:
+    storage: 1Gi 
+  accessModes:
+    - ReadWriteOnce
+  persistentVolumeReclaimPolicy: Delete
+  nfs: 
+    path: /export/v07
+    server: ocp311-infra-1
