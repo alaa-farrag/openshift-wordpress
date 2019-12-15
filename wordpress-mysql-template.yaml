@@ -265,7 +265,7 @@ objects:
         spec:
           containers:
             - name: mysql
-              image: openshift3/mysql-55-rhel7
+              image: registry.redhat.io/openshift3/mysql-55-rhel7
               ports:
                 - containerPort: 3306
               env:
